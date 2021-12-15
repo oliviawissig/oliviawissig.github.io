@@ -1,9 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/6d00266e98.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <h3>Hello World</h3>
+  <div class="header-container">
+    <div class="spacer">
+      <header class="nav-link-group">
+        <a class="nav-link" href="#name"><i class="fas fa-home"></i></a>
+        <a class="nav-link" href="#desc">About</a>
+        <a class="nav-link" href="#exp">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </header>
+    </div>
+  </div>
+  <div class="content">
+
+    <div class="paragraph">
+      <div id="name"></div>
+      <section id="name-container" style="margin-bottom: 10vh;">
+        Hello! 👋🏼 My name is <div id="name">&ensp;Olivia Wissig.</div>
+        <br><br>
+        <div id="location"><i class="fas fa-map-pin"></i>&emsp;California, USA</div>
+        <!-- use a pin icon and say CA, USA -->
+        <div id="github"><i class="fas fa-code-branch"></i>&emsp;Github</div>
+        <!-- use an outline github icon and say github-->
+        <div id="linkedin"><i class="fab fa-linkedin-in"></i>&emsp;LinkedIn</div>
+        <!-- same thing but linkedin -->
+        <br><br>
+        <div id="facebook"><i class="fab fa-facebook-f"></i>&emsp;Facebook</div>
+        <div id="google"><i class="fab fa-google-plus-g"></i>&emsp;Google+</div>
+        <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
+          data-type="HORIZONTAL" data-vanity="oliviawissig" data-version="v1"></div> -->
+
+      </section>
+
+      <div id="desc"></div>
+      <section id="desc-section" style="margin-bottom: 10vh;">
+        <div id="desc-text">
+          I am a striving front end developer, with a bachelor's in computer science. Currently, I am working in
+          technical
+          solutions at <a href="https://www.openweb.com/">OpenWeb</a>. I am passionate about technology, sneakers, and
+          plants!
+        </div>
+        <div id="about-img">
+          <img id="desc-pic" src="assets/images/me.png" alt="Olivia Wissig">
+        </div>
+      </section>
+
+      <div id="exp"></div>
+      <section id="experience-section" style="margin-bottom: 60vh;">
+        Here are some examples of where I've worked:
+      </section>
+
+      <div id="projects"></div>
+      <section id="projects-section" style="margin-bottom: 20vh;">
+        <div id="projects-desc">Here are some projects I've worked on:</div>
+        <br><br>
+        <div class="card-group">
+          <div class="card">
+            <div class="img-container">
+              <img class="card-img-top" src="/assets/images/RePot.png" alt="Card image"
+                style="height:95%;vertical-align:middle;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Repot App</h5>
+              <h6 class="card-subtitle mb-2 text-muted">React Native</h6>
+              <p class="card-text"><br>An app for users to buy & sell plants. </p>
+              <a href="https://github.com/oliviawissig/Repot-App" class="card-link">Github Repository</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <img class="card-img-top" src="assets/images/etch.png" alt="Card image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Etch-A-Sketch</h5>
+              <h6 class="card-subtitle mb-2 text-muted">HTML & CSS</h6>
+              <p class="card-text">A familiar classic. Use your mouse to imitate an Etch-A-Sketch.</p>
+              <a href="https://github.com/oliviawissig/Etch-A-Sketch" class="card-link">Github Repository</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <img class="card-img-top" src="assets/images/calc.png" alt="Card image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <h6 class="card-subtitle mb-2 text-muted">HTML & CSS</h6>
+              <p class="card-text"><br>A fun front-end calculator.</p>
+              <a href="https://github.com/oliviawissig/calculator" class="card-link">Github Repository</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="contact"></div>
+      <section id="contact-section" style="margin-bottom: 80vh;">
+        Contact me here!!
+        <br>
+        Big Button
+        <br>
+        oliviawissig@gmail.com
+      </section>
+    </div>
+  </div>
 </body>
+
 </html>

@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "BaksoSapi";
+  src: url("/assets/fonts/BaksoSapi.otf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbfbf8 !important;
+  overscroll-behavior-y: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 8px;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: #00e600;
+}
+
+::selection {
+  background: #00e600;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+a:hover {
+  color: #437d6d !important;
+}
+
+header {
+  background-color: transparent;
+}
+
+.spacer {
+  min-height: 18vh;
+  min-width: 100vw;
+}
+
+.paragraph {
+  margin-top: 23vh;
+  width: 100%;
+  float: left;
+}
+
+.content {
+  margin: auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Playfair Display",
+    serif;
+  overflow: auto;
+}
+
+.header-container {
+  z-index: 999 !important;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  background-color: #fbfbf8 !important;
+}
+
+.nav-link {
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+.nav-link-group {
+  width: 60%;
+  min-height: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-family: "Playfair Display",
+    serif;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  min-width: 350px !important;
+  max-width: 350px !important;
+}
+
+.img-container {
+  height: 22rem;
+}
+
+.card-img-top {
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+}
+
+#name {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Lora", serif;
+  font-size: 3vw;
+  line-height: 90%;
+  margin-bottom: 25vh;
+}
+
+#name-container {
+  font-size: 1.2vw;
+  font-weight: 300 !important;
+  letter-spacing: 0.8px;
+}
+
+#experience-section,
+#contact-section,
+#name-container {
+  width: 55%;
+  float: left;
+}
+
+#desc-section {
+  float: left;
+  margin-bottom: 60vh;
+  width: 100%;
+}
+
+#desc-text {
+  width: 50%;
+  float: left;
+}
+
+#desc-pic {
+  width: 45%;
+  float: right;
+  border-radius: 5px;
+  transition: all 500ms ease
+    50ms;
+}
+
+#desc-pic:hover {
+  border-top-right-radius: 120px;
+  border-bottom-left-radius: 120px;
+  filter: grayscale(100%);
+}
+
+.badge-base {
+  font-family: "Trebuchet MS",
+    "Lucida Sans Unicode",
+    "Lucida Grande",
+    "Lucida Sans", Arial,
+    sans-serif;
+
+  margin-top: 3vh;
+}
+
+#projects-section {
+  float: left;
+  width: 100%;
+  margin-bottom: 60vh;
+}
+
+div#project-desc {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#desc,
+#exp,
+#projects,
+#contact {
+  float: left;
+  height: 23vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 80%;
+  }
+
+  .card {
+    min-width: 200px !important;
+    max-width: 200px !important;
+  }
+
+  .img-container {
+    display: none;
+  }
+
+  #desc-section,
+  #experience-section,
+  #contact-section,
+  #name-container {
+    margin-bottom: 30vh;
+  }
+
+  #projects-section {
+    margin-bottom: 30vh;
+  }
+
+  .badge-base {
+    font-family: "Trebuchet MS",
+      "Lucida Sans Unicode",
+      "Lucida Grande",
+      "Lucida Sans", Arial,
+      sans-serif;
+
+    margin-top: 0;
+  }
+}
