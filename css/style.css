@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #fbfbf8 !important;
+  background-color: #dfd0c0 !important;
   overscroll-behavior-y: none;
 }
 
@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #437d6d !important;
+  color: white !important;
 }
 
 header {
@@ -74,9 +74,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  padding: 12px;
-  background-color: #fbfbf8 !important;
+  background-color: #dfd0c0 !important;
   z-index: 999999 !important;
+  padding-bottom: 16px;
 }
 
 .nav-link {
@@ -104,15 +104,25 @@ header {
 .card {
   min-width: 350px !important;
   max-width: 350px !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 8px;
+  margin-bottom: 15px !important;
+}
+
+.card-link {
+  text-decoration: underline !important;
+  text-align: center !important;
 }
 
 .img-container {
   height: 22rem;
+  border-radius: 10px !important;
+  overflow: hidden;
 }
 
 .card-img-top {
   height: 100%;
-  margin: auto;
   object-fit: cover;
 }
 
@@ -138,6 +148,10 @@ header {
   background-color: transparent !important;
 }
 
+.accordion-body li {
+  margin-bottom: 0.9em !important;
+}
+
 #resumeBtn {
   display: block !important;
   margin: auto !important;
@@ -150,6 +164,7 @@ header {
 }
 
 #name-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important;
   top: 13vh;
 
@@ -174,10 +189,15 @@ header {
   font-size: 19px;
 }
 
-#contact-section,
 #name-container {
-  width: 55%;
+  width: auto;
   float: left;
+}
+
+#contact-section {
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 #desc-section {
@@ -201,6 +221,7 @@ header {
   border-radius: 20px;
   transition: all 500ms ease
     50ms;
+    loading="lazy
 }
 
 #desc-pic:hover {
@@ -209,25 +230,16 @@ header {
   filter: grayscale(100%);
 }
 
-.badge-base {
-  font-family: "Trebuchet MS",
-    "Lucida Sans Unicode",
-    "Lucida Grande",
-    "Lucida Sans", Arial,
-    sans-serif;
-
-  margin-top: 3vh;
-}
-
 #projects-section {
   float: left;
   width: 100%;
   margin-bottom: 60vh;
 }
 
-div#project-desc {
-  display: flex;
-  flex-wrap: wrap;
+#projects-desc {
+  margin: auto;
+  width: 45vw;
+  text-align: center;
 }
 
 #desc,
@@ -251,10 +263,23 @@ div#project-desc {
   color: gray;
 }
 
+#contact-title {
+  font-size: 32px;
+  font-weight: 300;
+  font-family: "Lora", serif;
+  margin-bottom: 3vh;
+}
+
+#contact-desc {
+  font-size: 18px;
+  margin-bottom: 3vh;
+}
+
 @media screen and (max-width: 1200px) {
   #name-sticky {
-    position: unset !important;
+    position: unset;
     margin-top: 8px;
+    top: 6vh !important;
   }
 }
 
@@ -264,11 +289,13 @@ div#project-desc {
   }
 
   #name-sticky {
-    font-size: 22px;
+    font-size: 28px;
+    top: 6vh !important;
   }
 
   .nav-link {
-    margin-right: 0px;
+    margin-right: 6px;
+    padding: 3px !important;
   }
 }
 
@@ -278,19 +305,27 @@ div#project-desc {
   }
 
   .card {
-    min-width: 200px !important;
-    max-width: 200px !important;
+    min-width: 80vw !important;
+    border: 1px solid gray !important;
+  }
+
+  .card-text {
+    font-size: 16px !important;
   }
 
   .img-container {
     display: none;
   }
 
-  #targetLink1 {
+  /* #targetLink1 {
     display: none;
+  } */
+  #name-sticky {
+    top: 8vh !important;
   }
 
   #desc-text {
+    font-size: 16px !important;
     width: 100%;
     margin-right: 0;
   }
@@ -322,6 +357,12 @@ div#project-desc {
     margin-bottom: 30vh;
   }
 
+  #projects-desc {
+    margin: auto;
+    width: 80vw;
+    text-align: center;
+  }
+
   #desc,
   #exp,
   #projects,
@@ -330,17 +371,20 @@ div#project-desc {
     height: 23vh;
   }
 
-  .badge-base {
-    font-family: "Trebuchet MS",
-      "Lucida Sans Unicode",
-      "Lucida Grande",
-      "Lucida Sans", Arial,
-      sans-serif;
-
-    margin-top: 0;
-  }
+  /* .nav-link-group {
+    width: 60%;
+    min-height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-family: "Playfair Display",
+      serif;
+  } */
 
   .nav-link-group {
-    width: 80%;
+    width: 90%;
+    margin: auto !important;
+    justify-content: center;
   }
 }
