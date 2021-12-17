@@ -8,11 +8,7 @@ html {
 }
 
 body {
-<<<<<<< HEAD
   background-color: #dfd0c0 !important;
-=======
-  background-color: #f9f4ee !important;
->>>>>>> 7257049aaf27801601434c83e0d6b3649de9231f
   overscroll-behavior-y: none;
 }
 
@@ -78,12 +74,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-<<<<<<< HEAD
   background-color: #dfd0c0 !important;
-=======
-  padding: 12px;
-  background-color: #f9f4ee !important;
->>>>>>> 7257049aaf27801601434c83e0d6b3649de9231f
   z-index: 999999 !important;
   padding-bottom: 16px;
 }
@@ -158,11 +149,7 @@ header {
 }
 
 .accordion-body li {
-<<<<<<< HEAD
   margin-bottom: 0.9em !important;
-=======
-  margin-bottom: 1.1em !important;
->>>>>>> 7257049aaf27801601434c83e0d6b3649de9231f
 }
 
 #resumeBtn {
