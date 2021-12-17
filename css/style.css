@@ -56,7 +56,6 @@ header {
 }
 
 .paragraph {
-  margin-top: 23vh;
   width: 100%;
   float: left;
 }
@@ -66,19 +65,18 @@ header {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   font-family: "Playfair Display",
     serif;
-  overflow: auto;
 }
 
 .header-container {
-  z-index: 999 !important;
   position: fixed;
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
+  padding: 12px;
   background-color: #fbfbf8 !important;
+  z-index: 999999 !important;
 }
 
 .nav-link {
@@ -118,22 +116,64 @@ header {
   object-fit: cover;
 }
 
-#name {
+.accordion-item,
+.accordion-button {
+  background-color: transparent !important;
+  font-size: 19px !important;
+  padding: 15px !important;
+}
+
+.accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: 0 0 0 0 white !important;
+}
+
+.accordion-button:active {
+  border-color: transparent !important;
+  box-shadow: transparent !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: transparent !important;
+}
+
+#resumeBtn {
+  display: block !important;
+  margin: auto !important;
+}
+
+#sticky-group {
+  font-size: 20px;
+  width: 100%;
+  float: left;
+}
+
+#name-sticky {
+  position: sticky !important;
+  top: 13vh;
+
   font-size: 28px;
   font-weight: 700;
   font-family: "Lora", serif;
   font-size: 3vw;
   line-height: 90%;
   margin-bottom: 25vh;
+  z-index: 9999999 !important;
 }
 
 #name-container {
-  font-size: 1.2vw;
+  font-size: 20px;
   font-weight: 300 !important;
   letter-spacing: 0.8px;
 }
 
-#experience-section,
+#experience-section {
+  width: 80%;
+  margin: auto;
+  font-size: 19px;
+}
+
 #contact-section,
 #name-container {
   width: 55%;
@@ -141,20 +181,24 @@ header {
 }
 
 #desc-section {
-  float: left;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 60vh;
   width: 100%;
 }
 
 #desc-text {
-  width: 50%;
-  float: left;
+  width: 47.5%;
+  margin-right: 5%;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 19px;
 }
 
 #desc-pic {
-  width: 45%;
-  float: right;
-  border-radius: 5px;
+  width: 47.5%;
+  border-radius: 20px;
   transition: all 500ms ease
     50ms;
 }
@@ -187,12 +231,45 @@ div#project-desc {
 }
 
 #desc,
-#exp,
 #projects,
-#contact {
+#contact,
+#name {
   float: left;
-  height: 23vh;
+  height: 26vh;
   width: 100%;
+}
+
+#exp {
+  float: left;
+  height: 30vh;
+  width: 100%;
+}
+
+#accordionSubtitle {
+  vertical-align: bottom;
+  font-size: 16px;
+  color: gray;
+}
+
+@media screen and (max-width: 1200px) {
+  #name-sticky {
+    position: unset !important;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #name-container {
+    font-size: 18px;
+  }
+
+  #name-sticky {
+    font-size: 22px;
+  }
+
+  .nav-link {
+    margin-right: 0px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -209,15 +286,48 @@ div#project-desc {
     display: none;
   }
 
-  #desc-section,
+  #targetLink1 {
+    display: none;
+  }
+
+  #desc-text {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #desc-pic {
+    width: 100%;
+  }
+
+  #desc-pic:hover {
+    border-top-right-radius: 82px;
+    border-bottom-left-radius: 82px;
+    filter: grayscale(100%);
+  }
+
+  #desc-section {
+    flex-direction: column-reverse;
+    margin-bottom: 30vh;
+    width: 100%;
+  }
+
   #experience-section,
   #contact-section,
   #name-container {
     margin-bottom: 30vh;
+    width: 100%;
   }
 
   #projects-section {
     margin-bottom: 30vh;
+  }
+
+  #desc,
+  #exp,
+  #projects,
+  #contact,
+  #name {
+    height: 23vh;
   }
 
   .badge-base {
@@ -228,5 +338,9 @@ div#project-desc {
       sans-serif;
 
     margin-top: 0;
+  }
+
+  .nav-link-group {
+    width: 80%;
   }
 }

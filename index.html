@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="/css/style.css">
+  <script type="text/javascript" src="/assets/js/main.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -32,7 +33,7 @@
   <div class="header-container">
     <div class="spacer">
       <header class="nav-link-group">
-        <a class="nav-link" href="#name"><i class="fas fa-home"></i></a>
+        <a class="nav-link" href="#name"><i id="targetLink1" class="fas fa-home"></i></a>
         <a class="nav-link" href="#desc">About</a>
         <a class="nav-link" href="#exp">Experience</a>
         <a class="nav-link" href="#projects">Projects</a>
@@ -41,42 +42,111 @@
     </div>
   </div>
   <div class="content">
+    <div id="name"></div>
+    <p id="sticky-group">Hello! 👋🏼 My name is
+    <div id="name-sticky">&ensp;Olivia Wissig.</div>
+    </p>
 
     <div class="paragraph">
-      <div id="name"></div>
       <section id="name-container" style="margin-bottom: 10vh;">
-        Hello! 👋🏼 My name is <div id="name">&ensp;Olivia Wissig.</div>
         <br><br>
         <div id="location"><i class="fas fa-map-pin"></i>&emsp;California, USA</div>
-        <!-- use a pin icon and say CA, USA -->
-        <div id="github"><i class="fas fa-code-branch"></i>&emsp;Github</div>
-        <!-- use an outline github icon and say github-->
-        <div id="linkedin"><i class="fab fa-linkedin-in"></i>&emsp;LinkedIn</div>
-        <!-- same thing but linkedin -->
-        <br><br>
-        <div id="facebook"><i class="fab fa-facebook-f"></i>&emsp;Facebook</div>
-        <div id="google"><i class="fab fa-google-plus-g"></i>&emsp;Google+</div>
-        <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
-          data-type="HORIZONTAL" data-vanity="oliviawissig" data-version="v1"></div> -->
-
+        <br>
+        <a href="https://github.com/oliviawissig">
+          <div id="github"><i class="fas fa-code-branch"></i>&emsp;Github</div>
+        </a>
+        <a href="https://www.linkedin.com/in/oliviawissig/">
+          <div id="linkedin"><i class="fab fa-linkedin-in"></i>&emsp;LinkedIn</div>
+        </a>
+        <a href="https://www.facebook.com/oliviawissig/">
+          <div id="facebook"><i class="fab fa-facebook-f"></i>&emsp;Facebook</div>
+        </a>
       </section>
 
       <div id="desc"></div>
       <section id="desc-section" style="margin-bottom: 10vh;">
         <div id="desc-text">
           I am a striving front end developer, with a bachelor's in computer science. Currently, I am working in
-          technical
-          solutions at <a href="https://www.openweb.com/">OpenWeb</a>. I am passionate about technology, sneakers, and
-          plants!
+          technical solutions at <a href="https://www.openweb.com/">OpenWeb</a>. I am passionate about technology,
+          sneakers, and plants!
+          <br><br>
+          I was first introduced to code when I began customizing my tumblr blog in high school. A lot of googling and
+          an endless amount of syntax errors later, I found myself enrolled in an "Intro to Java" and that's when I was
+          drawn to programming.
+          <br><br>
         </div>
-        <div id="about-img">
-          <img id="desc-pic" src="assets/images/me.png" alt="Olivia Wissig">
-        </div>
+        <img id="desc-pic" src="assets/images/me.png" alt="Olivia Wissig">
       </section>
 
       <div id="exp"></div>
       <section id="experience-section" style="margin-bottom: 60vh;">
-        Here are some examples of where I've worked:
+        Here are some places where I've worked:
+        <br><br>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Stanford&ensp;<span id="accordionSubtitle">2015</span>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the first item's accordion body.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                ServiceNow&ensp;<span id="accordionSubtitle">2019</span>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+                filled with some actual content.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Apple&ensp;<span id="accordionSubtitle">2021</span>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                happening here in terms of content, but just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                OpenWeb&ensp;<span id="accordionSubtitle">2021</span>
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                happening here in terms of content, but just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <button type="button" id="resumeBtn" class="btn btn-outline-dark">Resume</button>
       </section>
 
       <div id="projects"></div>
