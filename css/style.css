@@ -116,6 +116,12 @@ header {
   text-align: center !important;
 }
 
+.card-link-group {
+  display: flex;
+  flex-wrap: nowrap !important;
+  row-gap: 0px !important;
+}
+
 .img-container {
   height: 22rem;
   border-radius: 10px !important;
@@ -275,6 +281,10 @@ header {
   margin-bottom: 3vh;
 }
 
+.card-link + .card-link {
+  margin-left: 2px !important;
+}
+
 @media screen and (max-width: 1200px) {
   .content {
     width: 80%;
@@ -396,16 +406,13 @@ header {
     height: 21vh;
   }
 
-  /* .nav-link-group {
-    width: 60%;
-    min-height: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    font-family: "Playfair Display",
-      serif;
-  } */
+  .card-link-group {
+  }
+
+  .card-link button {
+    padding: 5px !important;
+    margin-right: 0px !important;
+  }
 
   .nav-link-group {
     width: 90%;
