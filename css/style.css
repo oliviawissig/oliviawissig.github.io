@@ -304,7 +304,6 @@ header {
   }
 
   #desc-section {
-    margin-top: 10vh;
     width: 100%;
   }
 }
@@ -394,7 +393,7 @@ header {
   #projects,
   #contact,
   #name {
-    height: 23vh;
+    height: 21vh;
   }
 
   /* .nav-link-group {
