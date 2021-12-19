@@ -10,6 +10,7 @@ html {
 body {
   background-color: #dfd0c0 !important;
   overscroll-behavior-y: none;
+  transition: all 0.3s;
 }
 
 /* width */
