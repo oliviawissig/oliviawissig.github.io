@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #e3e2df !important;
+  background-color: #ede9e0 !important;
   font-family: "Noto Sans JP",
     sans-serif !important;
   overscroll-behavior-y: none;
@@ -49,7 +49,7 @@ header {
 }
 
 .spacer {
-  min-height: 18vh;
+  min-height: 12vh;
   min-width: 100vw;
 }
 
@@ -72,7 +72,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  background-color: #e3e2df !important;
+  background-color: #ede9e0 !important;
   z-index: 999999 !important;
   padding-bottom: 16px;
 }
@@ -200,6 +200,11 @@ header {
   font-size: 19px;
 }
 
+#experience-desc {
+  text-align: center;
+  font-size: 16px;
+}
+
 #name-container {
   width: auto;
   float: left;
@@ -258,7 +263,7 @@ header {
 #contact,
 #name {
   float: left;
-  height: 26vh;
+  height: 23vh;
   width: 100%;
 }
 
@@ -305,9 +310,8 @@ header {
 
   #name-sticky {
     position: unset;
-    margin-top: 8px;
     margin-left: 11vw;
-    top: 11vh !important;
+    top: 5vh !important;
   }
 
   #desc-pic {
@@ -321,9 +325,25 @@ header {
   #desc-section {
     width: 100%;
   }
+
+  #name,
+  #desc,
+  #exp,
+  #projects,
+  #contact {
+    height: 16vh;
+  }
 }
 
 @media screen and (max-width: 900px) {
+  .content {
+    width: 90%;
+  }
+
+  .card-text {
+    font-size: 16px !important;
+  }
+
   #name-container {
     font-size: 18px;
   }
@@ -337,38 +357,46 @@ header {
     margin-right: 6px;
     padding: 3px !important;
   }
-
+  /* 
   #desc-pic {
     width: 100%;
   }
-
+*/
   #desc-section {
-    flex-direction: column-reverse;
-    margin-bottom: 30vh;
     width: 100%;
   }
 
-  #desc-text {
-    font-size: 16px !important;
+  #projects-section {
     width: 100%;
-    margin-right: 0;
+  }
+
+  #projects-desc {
+    margin: auto;
+    width: 80vw;
+    text-align: center;
+  }
+
+  #desc-text {
+    width: 47.5%;
+    margin-right: 5%;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 1vh;
+  }
+
+  .accordion-body {
+    font-size: 16px !important;
+  }
+
+  #desc,
+  #exp,
+  #projects,
+  #contact {
+    height: 15vh;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .content {
-    width: 80%;
-  }
-
-  .card {
-    min-width: 80vw !important;
-    border: 1px solid gray !important;
-  }
-
-  .card-text {
-    font-size: 16px !important;
-  }
-
   .img-container {
     display: none;
   }
@@ -377,7 +405,7 @@ header {
     display: none;
   } */
   #name-sticky {
-    top: 8vh !important;
+    top: 6vh !important;
   }
 
   #desc-pic:hover {
@@ -388,27 +416,20 @@ header {
 
   #experience-section,
   #contact-section,
-  #name-container {
-    margin-bottom: 30vh;
-    width: 100%;
-  }
-
+  #name-container,
   #projects-section {
-    margin-bottom: 30vh;
-  }
-
-  #projects-desc {
-    margin: auto;
-    width: 80vw;
-    text-align: center;
+    width: 100%;
   }
 
   #desc,
   #exp,
   #projects,
-  #contact,
+  #contact {
+    height: 17vh;
+  }
+
   #name {
-    height: 21vh;
+    height: 27vh;
   }
 
   .card-link button {
