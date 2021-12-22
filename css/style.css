@@ -215,7 +215,6 @@ header {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 60vh;
   width: 100%;
 }
 
@@ -246,7 +245,6 @@ header {
 #projects-section {
   float: left;
   width: 100%;
-  margin-bottom: 60vh;
 }
 
 #projects-desc {
