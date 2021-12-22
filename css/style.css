@@ -1,14 +1,11 @@
-@font-face {
-  font-family: "BaksoSapi";
-  src: url("/assets/fonts/BaksoSapi.otf");
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #dfd0c0 !important;
+  background-color: #e3e2df !important;
+  font-family: "Noto Sans JP",
+    sans-serif !important;
   overscroll-behavior-y: none;
   transition: all 0.3s;
 }
@@ -66,8 +63,8 @@ header {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
-  font-family: "Playfair Display",
-    serif;
+  /* font-family: "Playfair Display",
+    serif; */
 }
 
 .header-container {
@@ -75,7 +72,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  background-color: #dfd0c0 !important;
+  background-color: #e3e2df !important;
   z-index: 999999 !important;
   padding-bottom: 16px;
 }
@@ -92,8 +89,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  font-family: "Playfair Display",
-    serif;
+  /* font-family: "Playfair Display",
+    serif; */
 }
 
 .card-group {
@@ -125,12 +122,19 @@ header {
 .img-container {
   height: 22rem;
   border-radius: 10px !important;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 15px 15px
+    rgba(101, 67, 33, 0.4);
   overflow: hidden;
 }
 
 .card-img-top {
   height: 100%;
   object-fit: cover;
+}
+
+.card-body {
+  margin-top: 3vh;
 }
 
 .accordion-item,
@@ -177,7 +181,7 @@ header {
 
   font-size: 28px;
   font-weight: 700;
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
   font-size: 3vw;
   line-height: 90%;
   margin-bottom: 25vh;
@@ -228,6 +232,9 @@ header {
   border-radius: 20px;
   transition: all 500ms ease
     50ms;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 15px 15px
+    rgba(101, 67, 33, 0.4);
 }
 
 #desc-pic:hover {
@@ -271,8 +278,8 @@ header {
 
 #contact-title {
   font-size: 32px;
-  font-weight: 300;
-  font-family: "Lora", serif;
+  font-weight: 600;
+  /* font-family: "Lora", serif; */
   margin-bottom: 3vh;
 }
 
