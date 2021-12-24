@@ -55,7 +55,7 @@ header {
 
 .paragraph {
   width: 100%;
-  float: left;
+  margin: auto;
 }
 
 .content {
@@ -63,8 +63,6 @@ header {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
-  /* font-family: "Playfair Display",
-    serif; */
 }
 
 .header-container {
@@ -323,12 +321,12 @@ header {
     height: 100% !important;
   }
 
-  #desc-text {
-    margin-top: 10%;
-  }
-
   #desc-section {
     width: 100%;
+  }
+
+  #projects-desc {
+    width: 65vw;
   }
 
   #name,
@@ -355,18 +353,28 @@ header {
 
   #name-sticky {
     font-size: 28px;
-    top: 6vh !important;
+    top: 4vh !important;
   }
 
   .nav-link {
     margin-right: 6px;
     padding: 3px !important;
   }
-  /* 
-  #desc-pic {
-    width: 100%;
+
+  #desc-pic:hover {
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    filter: grayscale(100%);
   }
-*/
+
+  #desc-text {
+    width: 47.5%;
+    margin-right: 5%;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 1vh;
+  }
+
   #desc-section {
     width: 100%;
   }
@@ -377,16 +385,8 @@ header {
 
   #projects-desc {
     margin: auto;
-    width: 80vw;
+    width: 75vw;
     text-align: center;
-  }
-
-  #desc-text {
-    width: 47.5%;
-    margin-right: 5%;
-    text-align: center;
-    font-size: 19px;
-    margin-top: 1vh;
   }
 
   .accordion-body {
@@ -406,23 +406,12 @@ header {
     display: none;
   }
 
-  /* #targetLink1 {
-    display: none;
-  } */
-  #name-sticky {
-    top: 6vh !important;
+  .card {
+    border: 1px solid black !important;
   }
 
-  #desc-pic:hover {
-    border-top-right-radius: 82px;
-    border-bottom-left-radius: 82px;
-    filter: grayscale(100%);
-  }
-
-  #experience-section,
   #contact-section,
-  #name-container,
-  #projects-section {
+  #name-container {
     width: 100%;
   }
 
@@ -437,14 +426,52 @@ header {
     height: 27vh;
   }
 
+  #desc-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  #desc-pic {
+    width: 90%;
+    margin: auto;
+  }
+
+  #desc-text {
+    width: 90%;
+    margin: auto;
+    font-size: 16px;
+    margin-top: 4vh;
+  }
+
+  #experience-section {
+    width: 90%;
+  }
+
+  #projects-section {
+    width: 100%;
+    margin: auto;
+  }
+
+  #projects-desc {
+    margin: auto !important;
+  }
+
   .card-link button {
     padding: 5px !important;
     margin-right: 0px !important;
+  }
+
+  .card {
+    min-width: 90% !important;
+    max-width: 90% !important;
+    margin: auto;
   }
 
   .nav-link-group {
     width: 90%;
     margin: auto !important;
     justify-content: center;
+    padding-top: 10vh;
   }
 }
