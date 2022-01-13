@@ -411,10 +411,10 @@ header {
     border: 1px solid black !important;
   }
 
-  #contact-section,
+  /* #contact-section,
   #name-container {
     width: 100%;
-  }
+  } */
 
   #desc,
   #exp,
