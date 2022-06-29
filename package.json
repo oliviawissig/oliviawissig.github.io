@@ -1,6 +1,7 @@
 {
-  "name": "http://oliviawissig.github.io/oliviawissig.github.io",
+  "name": "oliviawissig",
   "version": "0.1.0",
+  "homepage": "http://oliviawissig.github.io/oliviawissig.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
