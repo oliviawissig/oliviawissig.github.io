@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/oliviawissig.github.io/static/css/main.f4ed91ae.css",
+    "main.js": "/oliviawissig.github.io/static/js/main.47c4ccc9.js",
+    "static/js/787.1fe03228.chunk.js": "/oliviawissig.github.io/static/js/787.1fe03228.chunk.js",
+    "static/media/weather.png": "/oliviawissig.github.io/static/media/weather.8060b99c321ea331bd45.png",
+    "static/media/firegram.png": "/oliviawissig.github.io/static/media/firegram.da694ccbaede7c9a45bf.png",
+    "static/media/RePot.png": "/oliviawissig.github.io/static/media/RePot.44bf73a6d5a6f1edc537.png",
+    "static/media/me.jpeg": "/oliviawissig.github.io/static/media/me.e4d38fce004c7ef7935c.jpeg",
+    "static/media/42SRoman.ttf": "/oliviawissig.github.io/static/media/42SRoman.b1254abcbd83ead6eaae.ttf",
+    "static/media/resume.pdf": "/oliviawissig.github.io/static/media/resume.4c0c0fe362f72e07fc2d.pdf",
+    "static/media/calc.png": "/oliviawissig.github.io/static/media/calc.74cda70da7e985129a90.png",
+    "static/media/etch.png": "/oliviawissig.github.io/static/media/etch.e9e2d4103d65375efc18.png",
+    "static/media/Chromate.ttf": "/oliviawissig.github.io/static/media/Chromate.30d08004521c65b0fa0f.ttf",
+    "index.html": "/oliviawissig.github.io/index.html",
+    "main.f4ed91ae.css.map": "/oliviawissig.github.io/static/css/main.f4ed91ae.css.map",
+    "main.47c4ccc9.js.map": "/oliviawissig.github.io/static/js/main.47c4ccc9.js.map",
+    "787.1fe03228.chunk.js.map": "/oliviawissig.github.io/static/js/787.1fe03228.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4ed91ae.css",
+    "static/js/main.47c4ccc9.js"
+  ]
+}
