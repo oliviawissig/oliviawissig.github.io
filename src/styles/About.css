@@ -1,0 +1,49 @@
+.about {
+  display:flex;
+  justify-content: center;
+}
+#text {
+  /* border: 1px solid pink; */
+  margin-right:3vw;
+
+  font-size:1.1em;
+  color:var(--umber);
+  text-align:justify;
+}
+
+a {
+  text-decoration: none;
+  color: var(--steelblue);
+}
+
+a:hover {
+  color: var(--umber);
+}
+
+img {
+  border-radius: 8px;
+  opacity:0.9;
+  align-self: center;
+}
+
+img:hover {
+  opacity:1;
+}
+
+.skills{
+  width:100%;
+  text-align: center;
+  display:inline-block;
+}
+
+.skill {
+  margin-right:1vw;
+  margin-left:1vw;
+  font-size:30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .me{
+    display:none;
+  }
+}
