@@ -20,7 +20,7 @@ ul{
 }
 
 .exp{
-  text-align: justify;
+  text-align: left;
   color:var(--umber);
   text-transform: lowercase;
   font-family: "42S";
