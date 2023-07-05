@@ -34,5 +34,6 @@ ul {
         height: auto;
         overflow-y: visible;
         text-align: left;
+        width:90%;
     }
 }
