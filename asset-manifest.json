@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.ebd6f0b8.css",
-    "main.js": "/static/js/main.c4726033.js",
+    "main.css": "/static/css/main.80626eb0.css",
+    "main.js": "/static/js/main.b24bec3c.js",
     "static/js/787.1fe03228.chunk.js": "/static/js/787.1fe03228.chunk.js",
-    "static/media/weather.png": "/static/media/weather.8060b99c321ea331bd45.png",
-    "static/media/firegram.png": "/static/media/firegram.da694ccbaede7c9a45bf.png",
-    "static/media/RePot.png": "/static/media/RePot.44bf73a6d5a6f1edc537.png",
-    "static/media/me.jpeg": "/static/media/me.e4d38fce004c7ef7935c.jpeg",
+    "static/media/weather.png": "/static/media/weather.27003fed2b5dbb76a381.png",
+    "static/media/me.jpg": "/static/media/me.c61f7d74de7190c225a0.jpg",
+    "static/media/firegram.png": "/static/media/firegram.5025b144f4d12eedad87.png",
+    "static/media/RePot.png": "/static/media/RePot.eaba23cf52ef11d43fdb.png",
     "static/media/42SRoman.ttf": "/static/media/42SRoman.b1254abcbd83ead6eaae.ttf",
+    "static/media/Courgette.ttf": "/static/media/Courgette.f99d9948a486f6270149.ttf",
     "static/media/resume.pdf": "/static/media/resume.4c0c0fe362f72e07fc2d.pdf",
-    "static/media/calc.png": "/static/media/calc.74cda70da7e985129a90.png",
-    "static/media/etch.png": "/static/media/etch.e9e2d4103d65375efc18.png",
-    "static/media/Chromate.ttf": "/static/media/Chromate.30d08004521c65b0fa0f.ttf",
+    "static/media/calc.png": "/static/media/calc.b37896ec0ce6bc74ff0d.png",
+    "static/media/etch.png": "/static/media/etch.f53782a205d4960f28a7.png",
     "index.html": "/index.html",
-    "main.ebd6f0b8.css.map": "/static/css/main.ebd6f0b8.css.map",
-    "main.c4726033.js.map": "/static/js/main.c4726033.js.map",
+    "main.80626eb0.css.map": "/static/css/main.80626eb0.css.map",
+    "main.b24bec3c.js.map": "/static/js/main.b24bec3c.js.map",
     "787.1fe03228.chunk.js.map": "/static/js/787.1fe03228.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebd6f0b8.css",
-    "static/js/main.c4726033.js"
+    "static/css/main.80626eb0.css",
+    "static/js/main.b24bec3c.js"
   ]
 }
