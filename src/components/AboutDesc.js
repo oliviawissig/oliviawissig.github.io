@@ -22,7 +22,7 @@ function AboutDesc() {
             </p>
             <p>
                 after trying different projects and languages, i found am more interested and more passionate about front-end development. i like to make sure the user experience is easy and
-                convenient. i focus on working in react and javascript, but i have experience or have completed projects in the following languages:
+                convenient. i focus on working with react and javascript, but i have experience or have completed projects in the following languages:
             </p>
             <span className="skills">
                       <FontAwesomeIcon className="skill" icon="fa-brands fa-html5"/>
