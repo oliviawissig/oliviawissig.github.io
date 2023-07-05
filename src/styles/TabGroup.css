@@ -1,43 +1,41 @@
 .group {
-  display:flex;
-  justify-content: center;
-  width:100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.tabgroup{
-  display:flex;
-  justify-content: center;
+.tabgroup {
+    display: flex;
+    justify-content: center;
 }
 
 button {
-  font-size: 20px;
-  padding: 10px 18px;
-  color:var(--umber);
-  cursor: pointer;
-  border: 0;
-  outline: 0;
-  background-color: transparent;
+    font-size: 20px;
+    padding: 10px 18px;
+    color: var(--umber);
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
 }
 
-.active{
-  border-bottom: 2px solid rgba(111, 151, 216, 0.8);
-  opacity: 1;
+.active {
+    border-bottom: 2px solid rgba(111, 151, 216, 0.8);
+    opacity: 1;
 }
 
 .tabDesc {
-  margin:auto;
-  width:50vw;
-  /* border:1px solid red; */
-  font-family: "42S";
+    margin: auto;
+    font-family: "42S";
 }
 
-button:hover{
-  color:var(--steelblue);
-  opacity:1;
+button:hover {
+    color: var(--steelblue);
+    opacity: 1;
 }
 
 @media only screen and (max-width: 1025px) {
-  .tabDesc {
-    width:85vw !important;
-  }
+    .tabDesc {
+        width: 85vw !important;
+    }
 }

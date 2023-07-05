@@ -1,78 +1,77 @@
 :root {
-  --umber: #5C5346;
-  --steelblue: #6F97D8;
-  --almond: #F8F5F2;
+    --umber: #5C5346;
+    --steelblue: #6F97D8;
+    --almond: #FCFCFB;
 }
 
 @font-face {
-  font-family: "42S";
-  src: url("/src/assets/42SRoman.ttf");
+    font-family: "42S";
+    src: url("/src/assets/42SRoman.ttf");
 }
 
 @font-face {
-  font-family: "chromate";
-  src: url("/src/assets/Chromate.ttf");
+    font-family: "chromate";
+    src: url("/src/assets/Courgette.ttf");
 }
 
 ::selection {
-  background: var(--steelblue);
+    background: var(--steelblue);
 }
 
 #root {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 html {
-  /* border: 1px solid pink; */
-  padding: 0;
-  margin: 0;
-  background-color: var(--almond);
-  /* transition: all 0.3s; */
+    padding: 0;
+    margin: 0;
+    background-color: var(--almond);
 }
 
 body {
-  /* border: 1px solid red; */
-  padding: 0;
-  margin: 0;
-  overscroll-behavior: none;
+    padding: 0;
+    margin: 0;
+    overscroll-behavior: none;
 }
 
-p{
-  margin-block-start:0px;
+p {
+    margin-block-start: 0px;
 }
 
 .navbar {
-  text-align: center;
-  z-index: 1;
+    text-align: center;
+    z-index: 1;
 }
 
 .content {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  /* margin-top: 10vh; */
+    margin: auto;
+    text-align: center;
+}
+
+.blur-load{
+    background-size:cover;
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 0.4em;
+    width: 0.4em;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--umber);
-  border-radius: 8px;
+    background: var(--umber);
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 500px) {
-  .content {
-    width: 90%;
-    text-align: center;
-  }
+    .content {
+        width: 90%;
+        text-align: center;
+    }
 }
