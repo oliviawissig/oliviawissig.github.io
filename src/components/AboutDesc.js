@@ -30,7 +30,7 @@ function AboutDesc() {
                       <FontAwesomeIcon className="skill" icon="fa-brands fa-python"/>
                 </span>
         </div>
-        <div className="blur-load" style={{backgroundImage: "url(" + meS + ")", height:270, width:270, borderRadius:"8px"}}>
+        <div className="blur-load blur-load-me" style={{backgroundImage: "url(" + meS + ")", height:270, width:270, borderRadius:"8px"}}>
             <img src={me} alt="me holding a flower bouquet" height={270} width={270} className="me" loading={"lazy"}></img>
         </div>
     </div>);
