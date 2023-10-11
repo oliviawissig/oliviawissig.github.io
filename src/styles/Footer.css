@@ -1,0 +1,48 @@
+.footer{
+    flex-shrink: 0;
+    padding:10px 10px;
+    background-color: var(--primary);
+    color:white;
+}
+
+.footerContent{
+    width:60vw;
+    margin-left: 10vw;
+}
+
+.contactMe h3, .footerLinks h3{
+    color:white;
+    margin-bottom:15px;
+}
+
+.footerLinks a{
+    color:white;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding:5px;
+}
+
+.footerContainer{
+    display:flex;
+    flex-direction: row;
+    gap:15px 15px;
+}
+
+.footerForm{
+    display:flex;
+    flex-direction: column;
+}
+
+.footerLinks{
+    min-width: 200px;
+    display:flex;
+    flex-direction: column;
+}
+
+.contactMe{
+    flex-grow: 1;
+}

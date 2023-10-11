@@ -2,15 +2,15 @@ import AboutDesc from './AboutDesc';
 import ExpDesc from './ExpDesc';
 import ProjDesc from './ProjDesc';
 
-import '../styles/TabGroup.css';
-
-const desc = {
-    about: AboutDesc,
-    experience: ExpDesc,
-    projects: ProjDesc
-}
+import "../styles/Tab.css";
 
 function TabDesc(props) {
+    const desc = {
+        About: AboutDesc,
+        Experience: ExpDesc,
+        Projects: ProjDesc
+    }
+
     const Desc = desc[props.descType]
     return (
         <Desc {...props} />
