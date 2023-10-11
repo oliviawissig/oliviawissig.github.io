@@ -1,8 +1,7 @@
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {library} from '@fortawesome/fontawesome-svg-core'
 import Form from './Form';
 import PDF from '../assets/resume.pdf';
-import React, { useState } from 'react';
+import React from 'react';
 
 import "../styles/Footer.css"
 
