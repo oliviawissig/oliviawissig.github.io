@@ -68,14 +68,14 @@ p{
 
 .tabDesc{
     width:var(--content-width);
-    margin-left:10vw;
+    margin-left: var(--margin-left);
     color:var(--black-text);
 }
 
 .tabgroup{
     display:flex;
     flex-direction: row;
-    margin-left:10vw;
+    margin-left: var(--margin-left);
     margin-bottom:15px;
     margin-top:5px;
 }
@@ -192,6 +192,14 @@ p{
     left:2px;
 }
 
-#content{
-    flex:1 0 auto;
+@media only screen and (max-width: 600px) {
+    :root{
+        --content-width: 90vw;
+        --margin-left: 0vw;
+    }
+
+    .proj{
+        width: var(--content-width);
+        justify-content: center;
+    }
 }

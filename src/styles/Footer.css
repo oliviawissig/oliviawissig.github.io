@@ -6,8 +6,8 @@
 }
 
 .footerContent{
-    width:60vw;
-    margin-left: 10vw;
+    width:var(--content-width);
+    margin-left: var(--margin-left);
 }
 
 .contactMe h3, .footerLinks h3{
@@ -125,4 +125,23 @@ input:hover{
     transform: translate(0, 8px) scale(0.9);
     background-color: var(--primary);
     padding:0px 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        width:100vw;
+    }
+
+    .footerContent{
+        margin:auto;
+    }
+
+    .footerContainer{
+        flex-direction: column-reverse;
+    }
+
+    .footerLinks{
+        min-width:auto;
+        margin-bottom: 30px;
+    }
 }

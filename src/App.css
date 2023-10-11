@@ -21,6 +21,7 @@ a:hover, button:hover{
     --header-font: 'PT Serif', serif;
     --footer-text: white;
     --content-width: 60vw;
+    --margin-left: 10vw;
 }
 
 ::selection {
@@ -54,10 +55,6 @@ a:hover, button:hover{
     src: url("/src/assets/PTSerif-BoldItalic.ttf");
     font-weight:bold;
     font-style: italic;
-}
-
-html,body{
-    height:100%;
 }
 
 body{
@@ -98,6 +95,15 @@ h1,h2,h3,h4{
     background: #6e7e53;
 }
 
-#root, .App{
-    min-height:100%;
+@media only screen and (max-width: 600px) {
+    :root{
+        --margin-left: 0vw;
+        --content-width: 90vw;
+    }
+
+    .content{
+        margin:auto;
+        width:var(--content-width);
+        margin-bottom: 50px;
+    }
 }

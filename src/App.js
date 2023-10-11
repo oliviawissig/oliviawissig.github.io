@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
 	return (
 		<div className="App">
-			<div id="content">
+			<div className="content">
 				<Header/>
 				<TabGroup/>
 			</div>
