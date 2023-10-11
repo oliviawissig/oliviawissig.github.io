@@ -1,77 +1,109 @@
+* {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=48194), auto !important;
+}
+
+h1,h2,h3,h4,p,li, .tooltip-content{
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=48206), auto !important;
+}
+
+a:hover, button:hover{
+    cursor:url(http://www.rw-designer.com/cursor-extern.php?id=48201), auto !important;
+}
+
 :root {
-    --umber: #5C5346;
-    --steelblue: #6F97D8;
-    --almond: #FCFCFB;
-}
-
-@font-face {
-    font-family: "42S";
-    src: url("/src/assets/42SRoman.ttf");
-}
-
-@font-face {
-    font-family: "chromate";
-    src: url("/src/assets/Courgette.ttf");
+    --primary: #415d43;
+    --secondary: #b58463;
+    --black-text: #454545;
+    --gray-text: #B3B3B3;
+    --card-bg: #f3f3f3;
+    --page-bg-color: #FAFAFA;
+    --body-font: 'PT Serif', serif;
+    --header-font: 'PT Serif', serif;
+    --footer-text: white;
+    --content-width: 60vw;
+    --margin-left: 10vw;
 }
 
 ::selection {
-    background: #eeadb0;
+    background: var(--secondary);
+    color:white;
 }
 
-#root {
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: "PT Serif";
+    src: url("/src/assets/PTSerif-Regular.ttf");
+    font-weight:normal;
+    font-style: normal;
 }
 
-html {
-    padding: 0;
-    margin: 0;
-    background-color: var(--almond);
+@font-face {
+    font-family: "PT Serif";
+    src: url("/src/assets/PTSerif-Italic.ttf");
+    font-weight:normal;
+    font-style: italic;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    overscroll-behavior: none;
+@font-face {
+    font-family: "PT Serif";
+    src: url("/src/assets/PTSerif-Bold.ttf");
+    font-weight:bold;
+    font-style: normal;
 }
 
-p {
-    margin-block-start: 0px;
+@font-face {
+    font-family: "PT Serif";
+    src: url("/src/assets/PTSerif-BoldItalic.ttf");
+    font-weight:bold;
+    font-style: italic;
 }
 
-.navbar {
-    text-align: center;
-    z-index: 1;
+body{
+    margin:0;
+    padding:0;
+    background-color: var(--page-bg-color);
+    color:var(--black-font);
+    display:flex;
+    flex-direction: column;
 }
 
-.content {
-    margin: auto;
-    text-align: center;
+p{
+    font-family:var(--body-font);
 }
 
-.blur-load{
-    background-size:cover;
+h1,h2,h3,h4{
+    font-family:var(--header-font);
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 0.4em;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: transparent;
+    background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--umber);
-    border-radius: 8px;
+    background: var(--primary);
+    border-radius: 5px;
 }
 
-@media screen and (max-width: 500px) {
-    .content {
-        width: 90%;
-        text-align: center;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #6e7e53;
+}
+
+@media only screen and (max-width: 600px) {
+    :root{
+        --margin-left: 0vw;
+        --content-width: 90vw;
+    }
+
+    .content{
+        margin:auto;
+        width:var(--content-width);
+        margin-bottom: 50px;
     }
 }
