@@ -49,7 +49,7 @@ p{
 .about{
     display:flex;
     flex-direction: row;
-    margin-bottom: 8vw;
+    margin-bottom: 4vw;
 }
 
 .active{

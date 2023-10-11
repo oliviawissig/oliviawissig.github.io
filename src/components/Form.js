@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import emailjs from '@emailjs/browser';
 
 import "../styles/Footer.css"
 
 class Form extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+
     state = { 
         name: "",
         email: "",
@@ -55,9 +53,18 @@ class Form extends React.Component {
     render() { 
         return (
             <form className="footerForm" action={this.props.action} >
-                <textarea id="name" name="name" onChange={this.handleInputChange.bind(this)} placeholder='Name' required value={this.state.name} rows={1}/>
-                <textarea id="email" name="email" onChange={this.handleInputChange.bind(this)} placeholder='Email' required value={this.state.email} rows={1}/>
-                <textarea id="feedback" name="feedback" onChange={this.handleInputChange.bind(this)} placeholder='Feedback' required value={this.state.feedback} rows={4}/>
+                <div className="input-container">
+                    <textarea id="name" name="name" value={this.state.name} onChange={this.handleInputChange.bind(this)} required rows={1}/>
+                    <label className={this.state.name && "filled"}>Name</label>
+                </div>
+                <div className="input-container">
+                    <textarea id="email" name="email" onChange={this.handleInputChange.bind(this)} required value={this.state.email} rows={1}/>
+                    <label className={this.state.email && "filled"}>Email</label>
+                </div>
+                <div className="input-container">
+                    <textarea id="feedback" name="feedback" onChange={this.handleInputChange.bind(this)} required value={this.state.feedback} rows={3}/>
+                    <label className={this.state.feedback && "filled"}>Feedback</label>
+                </div>
                 
                 <input type="button" value="Send" onClick={this.sendMessage.bind(this)}/>
             </form>

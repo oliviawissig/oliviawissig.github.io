@@ -14,12 +14,16 @@ function ProjCard(props) {
             </div>
             <p className="cardDesc">{props.language}</p>
             <div className="links">
-                <button className="cardBtn" href={props.github} id="link">
-                    Github Repository
-                </button>
-                <button className="cardBtn" href={props.preview} id="link" style={(props.language === 'React Native' ? {visibility: 'hidden'} : {})}>
-                    Live Preview
-                </button>
+                <a href={props.github}>
+                    <button className="cardBtn" id="link">
+                        Github Repository
+                    </button>
+                </a>
+                <a href={props.preview}>
+                    <button className="cardBtn" id="link" style={(props.language === 'React Native' ? {visibility: 'hidden'} : {})}>
+                        Live Preview
+                    </button>
+                </a>
             </div>
         </div>
      );

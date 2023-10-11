@@ -11,7 +11,7 @@ a:hover, button:hover{
 }
 
 :root {
-    --primary: #8a9e68;
+    --primary: #415d43;
     --secondary: #b58463;
     --black-text: #454545;
     --gray-text: #B3B3B3;
@@ -19,6 +19,7 @@ a:hover, button:hover{
     --page-bg-color: #FAFAFA;
     --body-font: 'PT Serif', serif;
     --header-font: 'PT Serif', serif;
+    --footer-text: white;
     --content-width: 60vw;
 }
 
