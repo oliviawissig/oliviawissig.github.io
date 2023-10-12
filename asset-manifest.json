@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/oliviawissig.github.io/static/css/main.84cff06a.css",
+    "main.js": "/oliviawissig.github.io/static/js/main.52fd1e60.js",
+    "static/js/787.54caff72.chunk.js": "/oliviawissig.github.io/static/js/787.54caff72.chunk.js",
+    "static/media/weather.png": "/oliviawissig.github.io/static/media/weather.27003fed2b5dbb76a381.png",
+    "static/media/firegram.png": "/oliviawissig.github.io/static/media/firegram.5025b144f4d12eedad87.png",
+    "static/media/RePot.png": "/oliviawissig.github.io/static/media/RePot.eaba23cf52ef11d43fdb.png",
+    "static/media/PTSerif-Italic.ttf": "/oliviawissig.github.io/static/media/PTSerif-Italic.d90ee47f324014fc2bae.ttf",
+    "static/media/PTSerif-Regular.ttf": "/oliviawissig.github.io/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
+    "static/media/PTSerif-Bold.ttf": "/oliviawissig.github.io/static/media/PTSerif-Bold.baec85e607f452497274.ttf",
+    "static/media/PTSerif-BoldItalic.ttf": "/oliviawissig.github.io/static/media/PTSerif-BoldItalic.318ae97b9a42b7a6d6ba.ttf",
+    "static/media/calc.png": "/oliviawissig.github.io/static/media/calc.b37896ec0ce6bc74ff0d.png",
+    "static/media/resume.pdf": "/oliviawissig.github.io/static/media/resume.70bf71998f00e9b50f8c.pdf",
+    "static/media/etch.png": "/oliviawissig.github.io/static/media/etch.f53782a205d4960f28a7.png",
+    "index.html": "/oliviawissig.github.io/index.html",
+    "main.84cff06a.css.map": "/oliviawissig.github.io/static/css/main.84cff06a.css.map",
+    "main.52fd1e60.js.map": "/oliviawissig.github.io/static/js/main.52fd1e60.js.map",
+    "787.54caff72.chunk.js.map": "/oliviawissig.github.io/static/js/787.54caff72.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84cff06a.css",
+    "static/js/main.52fd1e60.js"
+  ]
+}
