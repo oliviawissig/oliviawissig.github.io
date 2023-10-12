@@ -1,0 +1,109 @@
+* {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=48194), auto !important;
+}
+
+h1,h2,h3,h4,p,li, .tooltip-content{
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=48206), auto !important;
+}
+
+a:hover, button:hover{
+    cursor:url(http://www.rw-designer.com/cursor-extern.php?id=48201), auto !important;
+}
+
+:root {
+    --primary: #415d43;
+    --secondary: #b58463;
+    --black-text: #454545;
+    --gray-text: #B3B3B3;
+    --card-bg: #f3f3f3;
+    --page-bg-color: #FAFAFA;
+    --body-font: 'PT Serif', serif;
+    --header-font: 'PT Serif', serif;
+    --footer-text: white;
+    --content-width: 60vw;
+    --margin-left: 10vw;
+}
+
+::selection {
+    background: var(--secondary);
+    color:white;
+}
+
+@font-face {
+    font-family: "PT Serif";
+    src: url("/src/assets/PTSerif-Regular.ttf");
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Serif";
+    src: url("/src/assets/PTSerif-Italic.ttf");
+    font-weight:normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PT Serif";
+    src: url("/src/assets/PTSerif-Bold.ttf");
+    font-weight:bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Serif";
+    src: url("/src/assets/PTSerif-BoldItalic.ttf");
+    font-weight:bold;
+    font-style: italic;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: var(--page-bg-color);
+    color:var(--black-font);
+    display:flex;
+    flex-direction: column;
+}
+
+p{
+    font-family:var(--body-font);
+}
+
+h1,h2,h3,h4{
+    font-family:var(--header-font);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #6e7e53;
+}
+
+@media only screen and (max-width: 600px) {
+    :root{
+        --margin-left: 0vw;
+        --content-width: 90vw;
+    }
+
+    .content{
+        margin:auto;
+        width:var(--content-width);
+        margin-bottom: 50px;
+    }
+}
