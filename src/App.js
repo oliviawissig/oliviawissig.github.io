@@ -1,18 +1,22 @@
 import Header from "./components/Header";
-import TabGroup from "./components/TabGroup";
-import Footer from "./components/Footer"
-import "./App.css";
+import About from "./components/About";
+import Projects from "./components/Projects";
+
+import './assets/styles/App.css';
 
 function App() {
-	return (
-		<div className="App">
-			<div className="content">
-				<Header/>
-				<TabGroup/>
-			</div>
-			<Footer/>
-		</div>
-	);
+  return (
+    <>
+      <div className="main-container" id="main-container">
+        <Header />
+        <About />
+        <Projects />
+      </div>
+      <footer>
+        Copyright © 2024 Olivia Wissig
+      </footer>
+    </>
+  );
 }
 
 export default App;
