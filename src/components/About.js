@@ -10,7 +10,7 @@ function About() {
         <div className="about-container">
             <h2>About</h2>
             <p>
-                I'm Olivia, and I'm a sales engineer at <a href="https://www.openweb.com/">OpenWeb</a> working with some of the top publishers in the world. I was born and raised in the Bay Area, and I am now living in the sunny Los Angeles. I've played sports my entire life, I love attending concerts, and I have two dogs named Romeo and Ella.
+                I'm Olivia, and I'm a sales engineer at <a href="https://www.openweb.com/">OpenWeb</a> working with some of the top publishers in the world. I was born and raised in the Bay Area, and I am now living in the sunny Los Angeles with my partner, Matthew. I've played sports my entire life, I love attending concerts, and I have two dogs named Romeo and Ella.
             </p>
         </div>
         <div className='exp-container'>

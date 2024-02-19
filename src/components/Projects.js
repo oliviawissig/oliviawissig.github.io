@@ -22,7 +22,7 @@ function Projects() {
                 <h3>Firegram</h3>
                 <p>Firegram uses Google's Firebase to allow users to upload images to the gallery. This only works for Olivia to avoid any unwanted pics. </p>
                 <span>
-                ﹥ <a href="https://oliviawissig.com/Firegram/">Live Site</a> &nbsp;
+                ﹥ <a href="https://firegram.oliviawissig.com/">Live Site</a> &nbsp;
                 ﹥ <a href="https://github.com/oliviawissig/firegram">Github</a>
                 </span>
             </div>
