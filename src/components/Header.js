@@ -42,9 +42,9 @@ function Header() {
                     <h1>Olivia Wissig</h1>
                     <p>Sales Engineer, Support Engineer</p>
                     <span className='social-links'>
-                    ↳<a href="https://www.facebook.com/oliviawissig">Facebook</a> 
-                    ↳<a href="https://github.com/oliviawissig">Github</a> 
-                    ↳<a href="https://www.linkedin.com/in/oliviawissig/">LinkedIn</a>
+                    <a href="https://www.facebook.com/oliviawissig">Facebook</a> 
+                    <a href="https://github.com/oliviawissig">Github</a> 
+                    <a href="https://www.linkedin.com/in/oliviawissig/">LinkedIn</a>
                     </span>
                 </div>
                 <div>
