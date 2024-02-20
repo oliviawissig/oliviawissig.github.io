@@ -1,6 +1,6 @@
 body {
   --font-color: #0e0e0e;
-  --background-color: #f2f2f2;
+  --background-color: #F4F3F2;
   --link-color: #FF7070;
   --link-hover-color: #ffabab;
 
@@ -22,11 +22,4 @@ body.dark{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    --font-color: #f2f2f2;
-    --background-color: #0e0e0e;
-  }
 }

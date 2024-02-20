@@ -8,14 +8,21 @@ import { faLightbulb as darkBulb } from '@fortawesome/free-regular-svg-icons';
 import { faLightbulb as lightBulb } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
-    const [isDark, setIsDark] = useState(false);
+    const systemPrefersDark = useMediaQuery({
+        query: "(prefers-color-scheme: dark)",
+      },
+      undefined, (isSystemDark) => setIsDark(isSystemDark)
+    );
+
+    const [isDark, setIsDark] = useState(systemPrefersDark);
 
     useEffect(() => {
         if (isDark) {
-          document.body.classList.add('dark');
-          document.getElementById('main-container').classList.add('dark');
+            document.body.classList.add('dark');
+            document.getElementById('main-container').classList.add('dark');
         } else {
-          document.body.classList.remove('dark');
+            document.body.classList.remove('dark');
+            document.getElementById('main-container').classList.remove('dark');
         }
     }, [isDark]); 
 
@@ -26,14 +33,6 @@ function Header() {
             setIsDark(true);
         }
     }
-
-    const systemPrefersDark = useMediaQuery(
-        {
-          query: "(prefers-color-scheme: dark)",
-        },
-        undefined,
-        (isSystemDark) => setIsDark(isSystemDark)
-    );
 
     return ( 
         <header className="main-header">
