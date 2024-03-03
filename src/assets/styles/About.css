@@ -88,4 +88,17 @@
     p{
         margin:0;
     }
+
+    #romeo, #ella{
+        color: white;
+    }
+    #romeo:hover span.pup-pic{
+        z-index: -999999;
+        opacity:0;
+    }
+    
+    #ella:hover span.pup-pic{
+        z-index: -999999;
+        opacity:0;
+    }
 }
