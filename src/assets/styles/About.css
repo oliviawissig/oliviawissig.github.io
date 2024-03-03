@@ -22,8 +22,65 @@
     font-size: 2rem;
 }
 
+.exp-role{
+    display:flex;
+    flex-direction: row;
+}
+
+.pup-pic{
+    position: absolute;
+    margin-top:-250px; /* height +caption */
+    background: #fff;
+    padding: 0.6rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+    text-align: center;
+    height:225px;
+    width:200px;
+
+    z-index: -999999;
+    opacity:0;
+    transition: all 1s ease;
+    -webkit-transition: all 1s;
+}
+
+.pup-pic > img{
+    max-width: 100%;
+    height:auto;
+}
+
+.caption{
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1em;
+    font-weight: 400;
+    /* font-style: normal; */
+    color:black;
+}
+
+#romeo, #ella{
+    font-style: italic;
+    font-weight: bold;
+    color: var(--link-color);
+}
+
+#romeo:hover span.pup-pic{
+    z-index: 999999;
+    opacity:1;
+
+    transition: all 1s ease;
+    -webkit-transition: all 1s;
+}
+
+#ella:hover span.pup-pic{
+    z-index: 999999;
+    opacity:1;
+
+    transition: opacity 1s ease;
+    -webkit-transition: all 1s;
+}
+
 @media only screen and (max-width: 850px) {
-    span{
+    .exp-role{
         flex-direction: unset;
         flex-wrap: wrap;
     }
