@@ -66,17 +66,19 @@
 #romeo:hover span.pup-pic{
     z-index: 999999;
     opacity:1;
+    cursor: crosshair;
 
-    transition: all 1s ease;
-    -webkit-transition: all 1s;
+    transition: opacity 0.2s linear;
+    -webkit-transition: opacity 0.2s;
 }
 
 #ella:hover span.pup-pic{
     z-index: 999999;
     opacity:1;
+    cursor: crosshair;
 
-    transition: opacity 1s ease;
-    -webkit-transition: all 1s;
+    transition: opacity 0.2s linear;
+    -webkit-transition: opacity 0.2s;
 }
 
 @media only screen and (max-width: 850px) {
@@ -90,7 +92,9 @@
     }
 
     #romeo, #ella{
-        color: white;
+        color: var(--text-color);
+        font-style: normal;
+        font-weight: 500;
     }
     #romeo:hover span.pup-pic{
         z-index: -999999;
