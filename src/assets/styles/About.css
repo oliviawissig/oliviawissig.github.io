@@ -29,18 +29,20 @@
 
 .pup-pic{
     position: absolute;
-    margin-top:-250px; /* height +caption */
-    background: #fff;
-    padding: 0.6rem;
-    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+    margin-top:-200px;
+    margin-left: -55px;
     text-align: center;
-    height:225px;
-    width:200px;
+    width:170px;
+    height:170px;
+    border-radius: 100px;
+    overflow: hidden;
+    border:1px solid black;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
 
     z-index: -999999;
     opacity:0;
-    transition: all 1s ease;
-    -webkit-transition: all 1s;
+    transition: all  0.2s ease;
+    -webkit-transition: all 0.2s;
 }
 
 .pup-pic > img{
@@ -63,22 +65,13 @@
     color: var(--link-color);
 }
 
-#romeo:hover span.pup-pic{
+#romeo:hover span.pup-pic, #ella:hover span.pup-pic{
     z-index: 999999;
     opacity:1;
-    cursor: crosshair;
+    margin-top:-180px;
 
-    transition: opacity 0.2s linear;
-    -webkit-transition: opacity 0.2s;
-}
-
-#ella:hover span.pup-pic{
-    z-index: 999999;
-    opacity:1;
-    cursor: crosshair;
-
-    transition: opacity 0.2s linear;
-    -webkit-transition: opacity 0.2s;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s;
 }
 
 @media only screen and (max-width: 850px) {

@@ -1,8 +1,6 @@
 @font-face {
     font-family: "Inconsolata";
-    src: 
-    url('../Inconsolata-VariableFont_wdth\,wght.ttf') format("woff2 supports variations"),
-    url('../Inconsolata-VariableFont_wdth\,wght.ttf') format("woff2-variations");
+    src:  url('../Inconsolata-VariableFont_wdth\,wght.ttf') format("woff2 supports variations"), url('../Inconsolata-VariableFont_wdth\,wght.ttf') format("woff2-variations");
     font-weight: 100 1000;
 }
 

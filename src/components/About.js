@@ -2,8 +2,8 @@ import { useState } from 'react';
 import '../assets/styles/About.css';
 import PDF from '../assets/resume.pdf';
 
-import ella from '../assets/imgs/ella.png'
-import romeo from '../assets/imgs/romeo.png'
+import ella from '../assets/imgs/ella.jpeg'
+import romeo from '../assets/imgs/romeo.jpeg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
@@ -18,14 +18,12 @@ function About() {
                 I'm Olivia, and I'm a sales engineer at <a href="https://www.openweb.com/">OpenWeb</a> working with some of the top publishers in the world. I was born and raised in the Bay Area, and I am now living in the sunny Los Angeles with my partner, Matthew. I've played sports my entire life, I love attending concerts, and I have two dogs named 
                 <span id='romeo'>
                     <span className='pup-pic'>
-                        <img src={romeo} alt='pic of romeo'/><br></br>
-                        <span className='caption'>Romeo</span>
+                        <img src={romeo} alt='pic of romeo'/>
                     </span> Romeo 
                 </span> and 
                 <span id='ella'>
                     <span className='pup-pic'>
-                        <img src={ella} alt='pic of ella'/> <br></br>
-                        <span className='caption'>Ella</span>
+                        <img src={ella} alt='pic of ella'/>
                     </span> Ella 
                 </span>.
             </p>
