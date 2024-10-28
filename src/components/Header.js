@@ -40,7 +40,7 @@ function Header() {
                 <img src={oliviaImg} alt="a great pic of olivia wissig" className='header-pic'/>
                 <div className='header-text-container'>
                     <h1>Olivia Wissig</h1>
-                    <p>Sales Engineer, Support Engineer</p>
+                    <p>Solutions Engineer</p>
                     <span className='social-links'>
                     <a href="https://www.facebook.com/oliviawissig">Facebook</a> 
                     <a href="https://github.com/oliviawissig">Github</a> 

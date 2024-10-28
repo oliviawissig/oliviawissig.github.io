@@ -15,7 +15,7 @@ function About() {
         <div className="about-container">
             <h2>About </h2>
             <p>
-                I'm Olivia, and I'm a sales engineer at <a href="https://www.openweb.com/">OpenWeb</a> working with some of the top publishers in the world. I was born and raised in the Bay Area, and I am now living in the sunny Los Angeles with my partner, Matthew. I've played sports my entire life, I love attending concerts, and I have two dogs named 
+                I'm Olivia, and I'm a solutions engineer at <a href="https://1password.com/">1Password</a>. I was born and raised in the Bay Area, and I am now living in the sunny Los Angeles with my partner, Matthew. I've played sports my entire life, I love attending concerts, and I have two dogs named 
                 <span id='romeo'>
                     <span className='pup-pic'>
                         <img src={romeo} alt='pic of romeo'/>
@@ -33,10 +33,17 @@ function About() {
                 <FontAwesomeIcon icon={faFilePdf} />
             </a>
             <h2>Experience</h2>
+            <h3>1Password</h3>
+            <span className='exp-role'>
+                <p>Solutions Engineer</p> &nbsp;
+                <p className='exp-date'>September 2024 - Current</p>
+            </span>
+            <p className='exp-desc'>Supported Sales team and Account Managers by joining customer calls and showcasing 1Password products and software.</p>
+            <p className='exp-desc'>Collaborated with team members and different departments to offer 1Password features and solutions while considering customer questions and concerns. </p>
             <h3>OpenWeb</h3>
             <span className='exp-role'>
                 <p>Sales Engineer</p> &nbsp;
-                <p className='exp-date'>2024 - Current</p>
+                <p className='exp-date'>January 2024 - August 2024</p>
             </span>
             <p className='exp-desc'>Supported Business Development with any product or implementation expectations throughout the customer sales journey. Created and presented interactive mockups by recreating customer articles and implementing OpenWeb products.</p>
             <span className='exp-role'>
