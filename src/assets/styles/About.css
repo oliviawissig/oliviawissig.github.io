@@ -1,3 +1,16 @@
+.divider{
+    width:60%;
+    height:1px;
+    border-radius: 10px;
+    color:darkgray;
+    background-color: darkgray;
+}
+
+.divider-ctr{
+    display: flex;
+    justify-content: center;
+}
+
 .about-container, .exp-container{
     margin: 2rem 0;
 }
