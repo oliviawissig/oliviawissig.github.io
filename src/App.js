@@ -13,7 +13,7 @@ function App() {
         <Projects />
       </div>
       <footer>
-        Copyright © 2024 Olivia Wissig
+        Copyright © 2025 Olivia Wissig
       </footer>
     </>
   );
